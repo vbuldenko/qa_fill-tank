@@ -106,6 +106,6 @@ describe('fillTank', () => {
 
     fillTank(customer, price, 2);
 
-    expect(customer.money).toBe(200 - (2 * price).toFixed(2));
+    expect(customer.money).toBe(200 - parseFloat((2 * price).toFixed(2)));
   });
 });
